@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 // import {useHistory} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 const mainDiv = {
     backgroundColor:'#1A1A1D',
@@ -29,9 +30,7 @@ const chatDiv = {
     display:'flex',
     marginTop:'5px',
     flexDirection:'column',
-    
     gap:'4px',
-    // margin: 'auto'
 }
 
 const inputStyle = {
@@ -50,7 +49,8 @@ const button = {
     fontWiegth:'bold',
     fontWeight:'bold',
     fontSize:'15px',
-    cursor:'pointer'
+    cursor:'pointer',
+    textAlign:'center'
     
 }
 
@@ -69,7 +69,10 @@ function SingIn() {
             <h1 style={heading}>Join Chat</h1>
             <div className='' style={chatDiv}>
                 <input placeholder='Name' required style={inputStyle} onChange={e=> setUser(e.target.value)} />
-                <button style={button} onClick={login}>SING IN</button>
+                <Link to={`/chat?name=${user}`} style={button}>
+                    SING IN
+                {/* <button style={button} onClick={login}></button> */}
+                </Link>
             </div>
         </div>
     </div>

@@ -1,11 +1,11 @@
 import React from 'react'
 import './../../App.css'
 
-function Header() {
+function Header({name}) {
   return (
     <div className='headerContainer'>
         <div className=''>
-            <p>Name of the user</p>
+            <p>{name}</p>
         </div>
     </div>
   )
