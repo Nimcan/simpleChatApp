@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import {io} from 'socket.io-client'
+import Header from '../header/Header'
 import Input from '../input/input'
 import Messages from '../Messages/message'
 import './../../App.css'
@@ -18,6 +19,7 @@ function Chat() {
   return (
     <div className='container'>
       <div className='outerContainer'>
+        <Header />
         <Messages />
         <Input />
       </div>

@@ -22,20 +22,30 @@
   justify-content: space-between;
   background-color: #ffffff;
   border-radius: 3px;
-  height: 60%;
+  height: 70%;
   width: 40%;
 }
 
 
+/* header container style */
+.headerContainer{
+  background: #112755;
+  padding: 15px 10px;
+  color: #fff !important;
 
+
+}
 
 
 /* message component styling */
 .messageMain{
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding: 0 5%;
   margin-top: 5px;
+
+
   
 }
 
@@ -43,12 +53,28 @@
   justify-content: flex-start;
 }
 
+.text{
+  background: #112755;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff !important;
+
+
+}
+
+.sentText{
+  padding: 10px;
+  color: #979EA9;
+
+
+}
+
 
 /* input component style */
 
 .inputForm{
   display: flex;
-  border-top: 2px solid #1A1A1D;
+  border-top: 1px solid #AEB7BC;
 }
 
 .inputForm input{
@@ -62,10 +88,10 @@
   width: 20%;
   text-decoration: none;
   border: none;
-  padding: 20px;
+  padding: 15px;
   text-transform: uppercase;
   /* background: #0c678f; */
-  background: black;
+  background: #112755;
   color: #fff !important;
 
 }

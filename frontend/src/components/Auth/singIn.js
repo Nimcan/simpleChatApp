@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+// import {useHistory} from 'react-router-dom'
 
 const mainDiv = {
     backgroundColor:'#1A1A1D',
@@ -55,13 +56,20 @@ const button = {
 
 
 function SingIn() {
+    const [user, setUser] = useState([])
+
+    // const history = useHistory()
+
+    function login(){
+        // history.push("/chat")
+    }
   return (
     <div style={mainDiv}>
         <div className='' style={containerDiv}>
             <h1 style={heading}>Join Chat</h1>
             <div className='' style={chatDiv}>
-                <input placeholder='Name' required style={inputStyle} />
-                <button style={button}>SING IN</button>
+                <input placeholder='Name' required style={inputStyle} onChange={e=> setUser(e.target.value)} />
+                <button style={button} onClick={login}>SING IN</button>
             </div>
         </div>
     </div>
